@@ -50,10 +50,6 @@ async def proxy_mcp(request):
         content = await request.body()
         
         try:
-            # For SSE (Server-Sent Events), we might need special handling
-            # but for simplicity we'll try a regular stream or request first.
-            # FastMCP uses standard SSE on /sse and POST on /messages
-            
             response = await client.request(
                 method,
                 url,
@@ -62,10 +58,16 @@ async def proxy_mcp(request):
                 follow_redirects=True
             )
             
+            # Sanitize response headers to avoid protocol errors (like Content-Length mismatch)
+            resp_headers = dict(response.headers)
+            for h in ["Content-Length", "Transfer-Encoding", "content-length", "transfer-encoding"]:
+                resp_headers.pop(h, None)
+            
             return Response(
                 content=response.content,
                 status_code=response.status_code,
-                headers=dict(response.headers)
+                headers=resp_headers,
+                media_type=response.headers.get("content-type")
             )
         except Exception as e:
             logger.error(f"Proxy error on {path}: {e}")
