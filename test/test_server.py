@@ -3,7 +3,7 @@ import pytest
 
 @pytest.mark.asyncio
 async def test_server_initialization(client):
-    """Tests that the main fmcp server initializes correctly and all sub-servers are mounted."""
+    """Tests that the main mathduke server initializes correctly and all sub-servers are mounted."""
     tools = await client.list_tools()
     tool_names = [tool.name for tool in tools]
     print("Available tools:", tool_names)

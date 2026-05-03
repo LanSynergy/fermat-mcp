@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use("Agg")
 from fastmcp.utilities.types import Image as FastImage
 
-from fmcp.mpl_mcp.core.eqn_chart import eqn_chart
+from mathduke.mpl_mcp.core.eqn_chart import eqn_chart
 
 
 def test_eqn_chart_single_and_multiple():

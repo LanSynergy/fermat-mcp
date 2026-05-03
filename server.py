@@ -1,14 +1,14 @@
 import os
 from fastmcp import FastMCP
-from fmcp.mpl_mcp.server import mpl_mcp
-from fmcp.numpy_mcp.server import numpy_mcp
-from fmcp.sympy_mcp.server import sympy_mcp
+from mathduke.mpl_mcp.server import mpl_mcp
+from mathduke.numpy_mcp.server import numpy_mcp
+from mathduke.sympy_mcp.server import sympy_mcp
 import asyncio
 
 __all__ = ["app", "setup"]
 
 app = FastMCP(
-    name="fmcp",
+    name="mathduke",
     instructions="""
     This MCP server is for mathematical calculations (both numerical and symbolic)
     and plotting.

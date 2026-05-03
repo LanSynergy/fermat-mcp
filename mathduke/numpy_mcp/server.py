@@ -1,6 +1,6 @@
 from fastmcp import FastMCP
-from fmcp.numpy_mcp.core.numerical_operation import numerical_operation
-from fmcp.numpy_mcp.core.matlib import matlib_operation
+from mathduke.numpy_mcp.core.numerical_operation import numerical_operation
+from mathduke.numpy_mcp.core.matlib import matlib_operation
 
 # Initialize the MCP server
 numpy_mcp = FastMCP(

@@ -67,10 +67,10 @@ Add the following to your `mcp.json`:
 ```json
 {
   "mcpServers": {
-    "fmcp": {
+    "mathduke": {
       "command": "bash",
       "args": ["MCP_SERVER_ABSOLUTE_PATH/setup.sh"],
-      "description": "fmcp server is for mathematical computations, including numerical and symbolic calculations, as well as plotting."
+      "description": "mathduke server is for mathematical computations, including numerical and symbolic calculations, as well as plotting."
     }
   }
 }
@@ -83,7 +83,7 @@ If you're using Claude or the Anthropic MCP client, add this working MCP configu
 ```json
 {
   "mcpServers": {
-    "fmcp": {
+    "mathduke": {
       "command": "uv",
       "args": [
         "--directory",
@@ -104,10 +104,10 @@ If you're using Claude or the Anthropic MCP client, add this working MCP configu
 ```json
 {
   "mcpServers": {
-    "fmcp": {
+    "mathduke": {
       "command": "bash",
       "args": ["MCP_SERVER_ABSOLUTE_PATH/setup.sh"],
-      "description": "fmcp server is for mathematical computations, including numerical and symbolic calculations, as well as plotting."
+      "description": "mathduke server is for mathematical computations, including numerical and symbolic calculations, as well as plotting."
     }
   }
 }
@@ -125,7 +125,7 @@ npx -y @smithery/cli install @abhiphile/fermat-mcp --client gemini
 - Using Gemini CLI
 ```
 ╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
-│  > Can you use fmcp server and using numpy method find the eigen values of this 8*8 matrix,                  |
+│  > Can you use mathduke server and using numpy method find the eigen values of this 8*8 matrix,                  |
 │    2 1 3 1 1 8 4 2                                                                                           |
 │    6 6 0 7 1 4 6 1                                                                                           │
 │    9 2 1 8 7 9 9 0                                                                                           │
@@ -137,7 +137,7 @@ npx -y @smithery/cli install @abhiphile/fermat-mcp --client gemini
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
  ╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
- │ ✔  numpy_mcp_numerical_operation (fmcp MCP Server) {"a":[[2,1,3,1,1,8,4,2],[6,6,0,7,1,4,6,1],[9,2,1,8,7,9,9,0],[2,5,6,6,9,8,0,1],[1,3,… │
+ │ ✔  numpy_mcp_numerical_operation (mathduke MCP Server) {"a":[[2,1,3,1,1,8,4,2],[6,6,0,7,1,4,6,1],[9,2,1,8,7,9,9,0],[2,5,6,6,9,8,0,1],[1,3,… │
  │                                                                                                                                         │
  │    {"eigenvalues":["32.077244457548815+0j","-11.531090644775198+0j","-6.6653982146786195+0j","0.6715984762411508+3.37024850             │
  │    10270413j","0.6715984762411508-3.3702485010270413j","4.541270555490195+2.776364664923869j","4.541270555490195-2.77636466             │

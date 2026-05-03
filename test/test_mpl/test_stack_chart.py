@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use("Agg")
 from fastmcp.utilities.types import Image as FastImage
 
-from fmcp.mpl_mcp.core.stack_chart import plot_stack
+from mathduke.mpl_mcp.core.stack_chart import plot_stack
 
 
 def test_stack_area_and_bar():

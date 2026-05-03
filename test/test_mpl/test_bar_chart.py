@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use("Agg")
 from fastmcp.utilities.types import Image as FastImage
 
-from fmcp.mpl_mcp.core.bar_chart import plot_barchart
+from mathduke.mpl_mcp.core.bar_chart import plot_barchart
 
 
 def test_bar_chart_vertical_and_horizontal():

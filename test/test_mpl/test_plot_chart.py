@@ -5,7 +5,7 @@ import pytest
 from collections.abc import Sequence
 from fastmcp.utilities.types import Image as FastImage
 
-from fmcp.mpl_mcp.core.plot_chart import plot_chart
+from mathduke.mpl_mcp.core.plot_chart import plot_chart
 
 
 def test_plot_chart_line_and_png():

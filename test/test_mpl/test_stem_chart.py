@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use("Agg")
 from fastmcp.utilities.types import Image as FastImage
 
-from fmcp.mpl_mcp.core.stem_chart import plot_stem
+from mathduke.mpl_mcp.core.stem_chart import plot_stem
 
 
 def test_stem_vertical_and_horizontal():

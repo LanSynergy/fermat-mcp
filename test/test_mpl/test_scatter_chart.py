@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use("Agg")
 from fastmcp.utilities.types import Image as FastImage
 
-from fmcp.mpl_mcp.core.scatter_chart import plot_scatter
+from mathduke.mpl_mcp.core.scatter_chart import plot_scatter
 
 
 def test_scatter_basic_png():

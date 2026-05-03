@@ -1,8 +1,8 @@
 from fastmcp import FastMCP
-from fmcp.sympy_mcp.core.algebra import algebra_operation
-from fmcp.sympy_mcp.core.calculus import calculus_operation
-from fmcp.sympy_mcp.core.equations import equation_operation
-from fmcp.sympy_mcp.core.matrices import matrix_operation
+from mathduke.sympy_mcp.core.algebra import algebra_operation
+from mathduke.sympy_mcp.core.calculus import calculus_operation
+from mathduke.sympy_mcp.core.equations import equation_operation
+from mathduke.sympy_mcp.core.matrices import matrix_operation
 
 sympy_mcp = FastMCP(
     name="sympy_mcp",
