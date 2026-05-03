@@ -1,13 +1,14 @@
-name: Build and Push Mathduke Image
+name: Build and Publish Docker Image
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   workflow_dispatch:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  # Use mathduke as the image name
+  IMAGE_NAME: ${{ github.repository_owner }}/mathduke
 
 jobs:
   build-and-push:
